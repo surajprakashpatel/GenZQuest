@@ -3,15 +3,14 @@
 import 'package:firebase_core/firebase_core.dart' show FirebaseOptions;
 import 'package:flutter/foundation.dart'
     show defaultTargetPlatform, kIsWeb, TargetPlatform;
-
-import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 
 // ...
 
 await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
+options: DefaultFirebaseOptions.currentPlatform,
 );
+
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
@@ -65,6 +64,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '796785179858',
     projectId: 'genzquest',
     storageBucket: 'genzquest.appspot.com',
+    iosClientId:
+        '796785179858-4bt1bq6ugdt4kf3f1srepmu9rd1vtabq.apps.googleusercontent.com',
     iosBundleId: 'com.example.genzquest',
   );
 
@@ -74,6 +75,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '796785179858',
     projectId: 'genzquest',
     storageBucket: 'genzquest.appspot.com',
+    iosClientId:
+        '796785179858-4bt1bq6ugdt4kf3f1srepmu9rd1vtabq.apps.googleusercontent.com',
     iosBundleId: 'com.example.genzquest',
   );
 }
